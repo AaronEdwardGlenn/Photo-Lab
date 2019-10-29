@@ -5,14 +5,14 @@ export default function renderImage(image){
 <li>
 
 <div class = 'info-container'>
-<h2>${image.name}</h2>
-<p class = 'image-type'>${image.type}</p>
+<h2>${image.title}</h2>
+<p class = 'image-type'>${image.description}</p>
 </div>
 
 <div class = 'image-container'>
 <img src = '${image.url}'>
 </div>
-<p class ="year"> ${image.year}</p>
+<p class ="horns">Number of horns: ${image.horns}</p>
 </li>
 
 `; 
