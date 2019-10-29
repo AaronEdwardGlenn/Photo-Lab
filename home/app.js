@@ -7,32 +7,40 @@ const list = document.querySelector('.images');
 const imageFilter = document.querySelector('.image-filter');
 
 imageFilter.addEventListener('change', () => {
+
     const filter = imageFilter.value; 
     let filteredImages = null; 
 
     if (!filter) {
         filteredImages = images; 
-        console.log(filteredImages); 
+
     }
-   
+    
     else {
+
         filteredImages = images.filter(image => {
+            
+
             return image.keyword === filter; 
+
         }); 
+
     }
-    renderImages(filteredImages); 
+
+    render(filteredImages); 
+
 });
 
 render(images); 
 
-function render(images) {
+function render(imagesToRender) {
     while (list.lastElementChild){
         list.lastElementChild.remove(); 
     }
 
 
 
-    images.forEach(image => {
+    imagesToRender.forEach(image => {
     
         const html = renderImages(image); 
         const dom = htmlToDOM(html); 
