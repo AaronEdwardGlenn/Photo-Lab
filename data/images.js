@@ -91,14 +91,14 @@ const images = [
         horns: 2
     },
     {
-        url: 'https://cdn.modernfarmer.com/wp-content/uploads/2014/08/28476658_9c97f35096_o.jpg',
+        url: 'https://media3.giphy.com/media/l396Zc43YyoBQDHAQ/source.gif',
         title: 'Mouflon',
         description: 'Those horns though',
         keyword: 'mouflon',
         horns: 2
     },
     {
-        url: 'https://cdn.modernfarmer.com/wp-content/uploads/2014/08/addax.jpg',
+        url: 'https://www.biolib.cz/IMG/GAL/26752.jpg',
         title: 'Addax',
         description: 'This guy is basically extinct but survives well in captivity, so they\'re frequently found in zoos',
         keyword: 'addax',
@@ -112,14 +112,14 @@ const images = [
         horns: 2
     },
     {
-        url: 'https://cdn.modernfarmer.com/wp-content/uploads/2014/08/chameleon.jpg',
+        url: 'https://media3.giphy.com/media/Qi2uMo9kdqqfS/source.gif',
         title: 'Happy Jackson\'s Chameleon',
         description: 'These are really common in Hawaii',
         keyword: 'chameleon',
         horns: 2
     },
     {
-        url: 'https://imgc.allpostersimages.com/img/print/posters/dlillc-jackson-s-chameleon_a-G-13448768-14258384.jpg',
+        url: 'https://media3.giphy.com/media/sk03tXQ5ExycU/giphy.gif',
         title: 'Serious Jackson\'s Chameleon',
         description: 'This one is very serious.',
         keyword: 'chameleon',

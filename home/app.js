@@ -4,15 +4,39 @@ import renderImages from '../home/render-image.js';
 
 const list = document.querySelector('.images'); 
 
+const imageFilter = document.querySelector('.image-filter');
 
-// let photo = document.getElementById('stag-photo'); 
+imageFilter.addEventListener('change', () => {
+    const filter = imageFilter.value; 
+    let filteredImages = null; 
 
-
-images.forEach(image => {
-    
-    const html = renderImages(image); 
-    const dom = htmlToDOM(html); 
-    list.appendChild(dom);   
-
-
+    if (!filter) {
+        filteredImages = images; 
+        console.log(filteredImages); 
+    }
+   
+    else {
+        filteredImages = images.filter(image => {
+            return image.keyword === filter; 
+        }); 
+    }
+    renderImages(filteredImages); 
 });
+
+render(images); 
+
+function render(images) {
+    while (list.lastElementChild){
+        list.lastElementChild.remove(); 
+    }
+
+
+
+    images.forEach(image => {
+    
+        const html = renderImages(image); 
+        const dom = htmlToDOM(html); 
+        list.appendChild(dom);   
+
+    });
+}
